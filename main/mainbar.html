@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainbar.css"/>
+    <link rel="stylesheet" href="all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gugi&family=Jua&family=Patrick+Hand&family=Source+Code+Pro:wght@500&display=swap"
+        rel="stylesheet"
+    />
+    <title>Mainpage</title>
+    <script
+        src="https://kit.fontawesome.com/605009ce51.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="mainbar.js" defer></script>
+</head>
+<body>
+    <nav class="main">
+        <div class="main_logo">
+            <i class="fas fa-pizza-slice"></i>
+            <a href="mainbar.html">유미의 세포들</a>
+        </div>
+
+        <ul class="main_menu">
+            <li><a href="../ad/ad.html">Community</a></li>
+            <li><a href="../info/info.html">About Us</a></li>
+        </ul>
+
+        <ul class="main_login">
+            <li><a href="../login/loginbar.html">LOGIN</a></li>
+            <li><a href="../register/register.html">REGISTER</a></li>
+        </ul>
+
+        <a href="#" class="mainbar_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <br><br>
+    <TABLE style="margin-left: 15px"  width=450 height=400 border=2 cellpadding=5 bgcolor=#e2effd>
+    <TR>
+     <TD style=text-align:center>작성일</TD>
+     <TD bgcolor=#e2effd><input type="date" name=day/></TD>
+    </TR>
+    <TR>
+     <TD style=text-align:center>작성자</TD>
+     <TD bgcolor=#e2effd><input type="text" name="name" size=10/></TD>
+    </TR>
+    <TR>
+        <TD style=text-align:center>이미지선택</TD>
+        <TD>
+            <div class="filebox">
+                <input class="upload-name" value="파일선택" disabled="disabled">
+                <label for="ex_filename">업로드</label>
+                <input type="file" id="ex_filename" class="upload-hidden">
+        </div>
+            </TD>
+        </TR>
+    </TABLE>
+</body>
+</html>
