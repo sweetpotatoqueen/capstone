@@ -87,12 +87,98 @@ a {
     .main_login li {
         width: 100%;
         text-align: center;
-    } 
+    }
     .mainbar_toggleBtn {
         display: block;
-    } 
+    }
     .main_menu.active,
     .main_login.active{
         display: flex;
     }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: SequentialistBB, cursive;
+    font-size: 24px;
+    margin: 0;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: float-right;
+  align-content: float-right;
+}
+section {
+  padding: 3rem;
+}
+blockquote.bubble {
+	background-position: center;
+  background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+  margin: 0 auto;
+	text-align: center;
+	height: 0;
+	box-sizing: content-box;
+	line-height: 1;
+}
+blockquote.electric {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+  width: 15%;
+  font-size: 20px;
+  font-style: italic;
+  padding: 4% 6% 12% 0%;
+}
+blockquote.electric span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.circular-sb {
+  width: 200px;
+  border: 5px solid #000000;
+  padding: 80px 0px;
+  float: right;
+  margin-bottom: 300px;
+  margin-right: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+  color: #000000;
+}
+
+.circle3 {
+  border: 5px solid #000000;
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  left: -10px;
+  bottom: 10px;
+}
+
+.circle3:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+}
+
+.circle4 {
+  border: 5px solid #000000;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  left: -60px;
+  bottom: 5px;
 }

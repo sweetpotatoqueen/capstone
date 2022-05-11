@@ -63,6 +63,10 @@ a {
     font-size: 24px;
     color: var(--accent-color);
 }
+.ex {
+   font-family: Courier, "Courier New", "Andale Mono", monospace;
+   font-size: 15px;
+}
 @media screen and (max-width: 768px) {
     .main {
         flex-direction: column;
