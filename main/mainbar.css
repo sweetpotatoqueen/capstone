@@ -23,7 +23,7 @@ a {
     font-family: 'Gugi', cursive;
 }
 .main_logo i {
-    color: var(--accent-color);
+    color: #000000;
     padding-left: 10px;
 }
 .main_menu {
