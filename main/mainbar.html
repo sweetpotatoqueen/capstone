@@ -47,17 +47,28 @@
     <span></span>
     </a>
     </div>
-
-
-    <TABLE style="margin-left: 380px; margin-top: 120px" width=100 height=100 border=2 cellpadding=5 bgcolor=#ffffff>
-        <TD>
-            <div class="filebox">
-                <input class="upload-name" value="FILE" disabled="disabled">
+    <div class="container">
+        <div class="image-upload" id="image-upload">
+          <form method="post" enctype="multipart/form-data">
+            <div style="margin-left:250px; margin-top: 100px"  class="button">
+                <input class="upload-name" disabled="disabled">
                 <label for="ex_filename"  class="ex"></label>
-                <input type="file" id="ex_filename" class="upload-hidden">
-        </div>
-            </TD>
-    </TABLE>
+                <input type="file" id="ex_filename" name="ex_filename" class="upload-hidden" onchange="loadFile(this)">
+              </div>
+        </form>
+        <div class="fileContainer">
+                <div class="fileInput">
+                    <p id="fileName"></p>
+                </div>
+                <div style="margin-left:10px" class="buttonContainer">
+                    <div class="submitButton" id="submitButton">start!</div>
+                </div>
+            </div>
+                <div style="margin-top: 1000px" class="image-show" id="image-show"></div>
+              </div></div>
+
+                <script src="show.js"></script>
+
     <section>
       <blockquote class="electric bubble" class="ex">CAPSTONE<span>, CAPSTONE</span></blockquote>
     </section>
