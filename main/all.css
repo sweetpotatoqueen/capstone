@@ -154,8 +154,9 @@ a {
     position: absolute;
     width: 50%;
     height: 50%;
+    margin-left: 300px;
+    margin-top: 10px;
 }
-
 .img {
     position: absolute;
     height: 50%;
