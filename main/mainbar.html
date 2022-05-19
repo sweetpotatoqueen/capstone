@@ -1,76 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainbar.css"/>
-    <link rel="stylesheet" href="all.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gugi&family=Jua&family=Patrick+Hand&family=Source+Code+Pro:wght@500&display=swap"
-        rel="stylesheet"
-    />
-    <title>Mainpage</title>
-<script src="https://kit.fontawesome.com/4f8c8e9cb3.js" crossorigin="anonymous"></script>
-    <script src="mainbar.js" defer></script>
-</head>
-<body>
-    <nav class="main">
-        <div class="main_logo">
-            <i class="fa-solid fa-camera-retro"></i>
-            <a href="mainbar.html">유미의 세포들</a>
-        </div>
-
-        <ul class="main_menu">
-            <li><a href="../ad/ad.html">Community</a></li>
-            <li><a href="../info/info.html">About Us</a></li>
-        </ul>
-
-        <ul class="main_login">
-            <li><a href="../login/loginbar.html">LOGIN</a></li>
-            <li><a href="../register/register.html">REGISTER</a></li>
-        </ul>
-
-        <a href="#" class="mainbar_toggleBtn">
-            <i class="fas fa-bars"></i>
-        </a>
-    </nav>
-    <img src="yumi.png" width="350" height="500" align="right" style="margin-right:200px; margin-top:80px">
-    <br><br>
-    <h3 align="center"> "A chance to transform into Yumi's cell" </h3>
-    <h style="font-size:16px; margin-left: 200px"> All you need is a picture. </h> <br>
-    <h align="center" style="font-size:16px; margin-left: 200px"> Click the button below to select the picture.</h>
-
-    <div style="margin-left: 500px; margin-top: 60px" class="arrow-down">
-    <a href="#about">
-    <span></span>
-    <span></span>
-    <span></span>
-    </a>
-    </div>
-    <div class="container">
-        <div class="image-upload" id="image-upload">
-          <form method="post" enctype="multipart/form-data">
-            <div style="margin-left:250px; margin-top: 100px"  class="button">
-                <input class="upload-name" disabled="disabled">
-                <label for="ex_filename"  class="ex"></label>
-                <input type="file" id="ex_filename" name="ex_filename" class="upload-hidden" onchange="loadFile(this)">
-              </div>
-        </form>
-          </div></div>
-        <div class="fileContainer">
-                <div class="fileInput">
-                    <p id="fileName"></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="mainbar.css" />
+        <link rel="stylesheet" href="all.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gugi&family=Jua&family=Patrick+Hand&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+        <title>Mainpage</title>
+        <script src="https://kit.fontawesome.com/4f8c8e9cb3.js" crossorigin="anonymous"></script>
+        <script src="mainbar.js" defer></script>
+    </head>
+    <body>
+        <nav class="main">
+            <div class="main_logo">
+                <i class="fa-solid fa-camera-retro"></i>
+                <a href="mainbar.html">유미의 세포들</a>
+            </div>
+        </nav>
+        <section class="main-sec">
+            <div class="main-content">
+                <div>
+                    <img src="yumi.png" width="350" height="500" align="right" style="margin-right: 50px; margin-top: 80px" />
                 </div>
-                <div style="margin-left:10px" class="buttonContainer">
-                    <div class="submitButton" id="submitButton">start!</div>
+                <div class="left">
+                    <div class="text">
+                        <h3>"A chance to transform into Yumi's cell"</h3>
+                        <h> All you need is a picture. </h> <br />
+                        <h> Click the button below to select the picture.</h>
+                    </div>
+                    <div class="container">
+                        <input type="range" max="200" />
+                    </div>
                 </div>
             </div>
-            <div class = border>
-                <div style="margin-top: 70px; margin-right: 200px;" class="image-show" id="image-show"></div>
-                <script src="show.js"></script>
-                <section>
+            <div style="margin-left: 10px" class="buttonContainer">
+                <div class="submitButton" id="submitButton">start!</div>
+            </div>
+        </section>
+        <div class="border">
+            <div style="margin-right: 200px" class="image-show" id="image-show"></div>
+            <section class="sec">
                 <blockquote class="speech bubble">CAPSTONE</blockquote>
-              </section></div>
-
-</body>
+            </section>
+        </div>
+        <script src="./cc/src/index.js" type="module"></script>
+    </body>
 </html>

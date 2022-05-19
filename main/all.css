@@ -1,12 +1,17 @@
 :root {
     --text-color: #000051;
-    --accent-color:  red;
+    --accent-color: red;
     --background-color: #fdd835;
     --hover-color: #e9dcd1;
 }
 body {
     margin: 0;
 }
+
+nav {
+    height: 80px;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -19,9 +24,9 @@ a {
 }
 .main_logo {
     font-size: 30px;
-    font-family: 'Gugi', cursive;
+    font-family: "Gugi", cursive;
 }
-.main_logo i{
+.main_logo i {
     color: #000000;
     padding-left: 10px;
 }
@@ -30,7 +35,7 @@ a {
     list-style: none;
     padding-left: 0;
     /* font-family: 'Gugi', cursive; */
-    font-family: 'Jua', sans-serif;
+    font-family: "Jua", sans-serif;
     font-size: 18px;
 }
 .main_menu li {
@@ -42,10 +47,10 @@ a {
 }
 .main_login {
     display: flex;
-    list-style : none;
+    list-style: none;
     padding-left: 0;
     /* font-family: 'Gugi', cursive; */
-    font-family: 'Jua', sans-serif;
+    font-family: "Jua", sans-serif;
     font-size: 18px;
 }
 .main_login li {
@@ -72,7 +77,7 @@ a {
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 100%
+        width: 100%;
     }
     .main_menu li {
         width: 100%;
@@ -82,7 +87,7 @@ a {
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 100%
+        width: 100%;
     }
     .main_login li {
         width: 100%;
@@ -92,7 +97,7 @@ a {
         display: block;
     }
     .main_menu.active,
-    .main_login.active{
+    .main_login.active {
         display: flex;
     }
 }
@@ -161,7 +166,6 @@ a {
     width: 100%;
 }
 
-
 label {
     cursor: pointer;
     font-size: 8px;
@@ -171,144 +175,129 @@ label {
     visibility: hidden;
 }
 
-.arrow-down span{
-  display: block;
-  width: 1.5em;
-  height: 1.5em;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animatearrows 2s infinite;
+.arrow-down span {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animatearrows 2s infinite;
 }
 
-@keyframes animatearrows{
-  0%{
-    opacity: 0;
-    transform: rotate(45deg) translate(-1.5em, -1.5em);
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    transform: rotate(45deg) translate(1.5em, 1.5em);
-  }
+@keyframes animatearrows {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-1.5em, -1.5em);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(1.5em, 1.5em);
+    }
 }
 
-.arrow-down span:nth-child(1){
-  animation-delay: -0.2s;
+.arrow-down span:nth-child(1) {
+    animation-delay: -0.2s;
 }
-.arrow-down span:nth-child(2){
-  animation-delay: -0.4s;
+.arrow-down span:nth-child(2) {
+    animation-delay: -0.4s;
 }
-.arrow-down span:nth-child(3){
-  animation-delay: -0.6s;
+.arrow-down span:nth-child(3) {
+    animation-delay: -0.6s;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
     font-family: SequentialistBB, cursive;
     font-size: 24px;
     margin: 0;
 }
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: float-right;
-  align-content: float-right;
+
+.sec {
+    display: flex;
+    justify-content: float-right;
+    align-content: float-right;
+    padding: 3rem;
 }
-section {
-  padding: 3rem;
-}
+
 blockquote.bubble {
-	background-position: center;
-  background-repeat: no-repeat !important;
-	background-size: 50% 50%;
-  margin: 0 auto;
-	text-align: center;
-	height: 0;
-	box-sizing: content-box;
-	line-height: 1;
-  margin-left:650px;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 50% 50%;
+    margin: 0 auto;
+    text-align: center;
+    height: 0;
+    box-sizing: content-box;
+    line-height: 1;
+    margin-left: 650px;
 }
+
 blockquote.speech {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
-  width: 20%;
-  padding-top: 3%;
-	padding-bottom: 6%;
-}
-.border{
-  margin-left:20px;
-  margin-top:250px;
-  margin-right:20px;
-  margin-bottom:10px;
-  border: 4px double #000000;
-  border-radius: 20px;
-  height: 650px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+    width: 20%;
+    padding-top: 3%;
+    padding-bottom: 6%;
 }
 
-
-
-/* blockquote.electric {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
-  width: 13%;
-  font-size: 20px;
-  font-style: italic;
-  padding: 4% 6% 12% 0%;
-}
-blockquote.electric span {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
+.border {
+    margin-left: 20px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    border: 4px double #000000;
+    border-radius: 20px;
+    height: 800px;
 }
 
-
-.circular-sb {
-  width: 200px;
-  border: 5px solid #000000;
-  padding: 80px 0px;
-  float: right;
-  margin-left: 700px;
-  margin-top: 250px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  font-family: arial;
-  position: relative;
-  color: #000000;
+.border input {
+    height: 40px;
 }
 
-.circle3 {
-  border: 5px solid #000000;
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  left: -10px;
-  bottom: 10px;
+.left {
+    margin-top: 80px;
+    margin-left: 50px;
 }
 
-.circle3:before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  right: 0px;
-  bottom: 0px;
-  background: #fff;
+.main-content {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-.circle4 {
-  border: 5px solid #000000;
-  position: absolute;
-  width: 5px;
-  padding: 10px 15px;
-  border-radius: 50%;
-  left: -60px;
-  bottom: 5px;
-} */
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-content: center;
+}
+
+img {
+    max-width: 300px;
+    min-width: 100px;
+}
+
+input {
+    width: 50%;
+}
+
+.main-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.resultImage img {
+    width: 300px;
+}
