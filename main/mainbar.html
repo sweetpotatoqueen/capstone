@@ -9,6 +9,8 @@
         <title>Mainpage</title>
         <script src="https://kit.fontawesome.com/4f8c8e9cb3.js" crossorigin="anonymous"></script>
         <script src="mainbar.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     </head>
     <body>
         <nav class="main">
@@ -38,11 +40,35 @@
             </div>
         </section>
         <div class="border">
-            <div style="margin-right: 200px" class="image-show" id="image-show"></div>
+            <div style="margin-right: 200px" class="image-show" id="image-show"></div><br>
+            <button id="shot">screen shot</button>
+            <div id="capture">
             <section class="sec">
                 <blockquote class="speech bubble">CAPSTONE</blockquote>
             </section>
-        </div>
         <script src="./cc/src/index.js" type="module"></script>
-    </body>
+      </div>
+        </div>
+      <script>
+$(function(){
+$("#shot").on("click", function(){
+html2canvas(document.querySelector("#capture")).then(canvas => {
+saveAs(canvas.toDataURL('image/png'),"capture-test.png");
+});
+});
+function saveAs(uri, filename) {
+var link = document.createElement('a');
+if (typeof link.download === 'string') {
+link.href = uri;
+link.download = filename;
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+} else {
+window.open(uri);
+}
+}
+});
+</script>
+</body>
 </html>
